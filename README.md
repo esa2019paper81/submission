@@ -1,10 +1,10 @@
 # Purpose
 
-This repository contains the main implementation of PUFFINN: Universal and Fast FInding of Nearest Neighbors. The source code is provided in `PUFFINN`. It has been tested under different version of Ubuntu Linux.
+This repository contains the main implementation of PUFFINN: Universal and Fast FInding of Nearest Neighbors. The source code is provided in `PUFFINN`. It has been tested under different versions of Ubuntu Linux.
 
 ## Building the Code
 
-Follow the following steps in the `PUFFINN` directory. 
+Follow these steps in the `PUFFINN` directory. 
 
 ```
 mkdir bin
