@@ -324,7 +324,7 @@ void set_hash_args(CrossPolytopeHash::Args& args, const py::dict& params) {
     }
 };
 
-PYBIND11_MODULE(_puffinnwrapper, m) {
+PYBIND11_MODULE(_puffinn, m) {
     py::class_<Index>(m, "Index")
         .def(py::init<const std::string&, const unsigned int&, const uint64_t&, const py::kwargs&>())
         .def("insert", &Index::insert)

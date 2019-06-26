@@ -11,7 +11,3 @@ add_library(dummy OBJECT ${ExampleFiles})
 include_directories("test/include")
 add_executable(Test "test/main.cpp" "test/code.cpp")
 target_link_libraries(Test)
-
-add_subdirectory("external/pybind11")
-pybind11_add_module(_puffinnwrapper "python/wrapper/python_wrapper.cpp")
-target_link_libraries(_puffinnwrapper)
