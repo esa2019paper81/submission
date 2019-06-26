@@ -6,6 +6,7 @@ virtualenv:
 python:
 - '3.5'
 install:
+- pip3 install numpy 
 - cd PUFFINN && python3 setup.py build
 - python3 setup.py install
 script:
