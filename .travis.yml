@@ -17,7 +17,7 @@ matrix:
                 install:
                 - cd PUFFINN
                 - mkdir bin && cd bin
-                - cmake ..
+                - cmake .. && make
                 script:
                 - ./Test
 
