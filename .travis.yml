@@ -1,13 +1,24 @@
 sudo: required
 dist: xenial
-language: python
-virtualenv:
-  system_site_packages: true
-python:
-- '3.5'
-install:
-- pip3 install numpy 
-- cd PUFFINN && python3 setup.py build
-- python3 setup.py install
-script:
-- python3 python/example/example.py 
+matrix:
+        include:
+              - language: python
+                virtualenv:
+                  system_site_packages: true
+                python:
+                - '3.5'
+                install:
+                - pip3 install numpy 
+                - cd PUFFINN && python3 setup.py build
+                - python3 setup.py install
+                script:
+                - python3 python/example/example.py 
+              - language: cpp
+                install:
+                - cd PUFFINN
+                - mkdir bin && cd bin
+                - cmake ..
+                script:
+                - ./Test
+
+
