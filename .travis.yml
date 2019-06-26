@@ -9,4 +9,4 @@ install:
 - cd PUFFINN && python3 setup.py build
 - python3 setup.py install
 script:
-- cd PUFFINN/python/example && python3 example.py 
+- python3 python/example/example.py 
